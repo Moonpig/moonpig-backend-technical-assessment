@@ -1,0 +1,31 @@
+{
+    "products": [
+        {
+            "id": "ab7e3dfc-d947-4161-909f-fa4e5f3dc1cb",
+            "name": "Birthday Card - Graphic Patterns - Photo Upload",
+            "previewUrl": "https://images.ctfassets.net/3m6f3dx67i1j/3ztpsOfoWZXo4j3uVRStpF/2dbebe2dcf4ba0df5cd45b4a9b87164f/fa-image-landscape.png?w=640&h=360&fit=fill",
+            "price": {
+                "amount": 4.99,
+                "currency": "GBP"
+            }
+        },
+        {
+            "id": "14daf4e8-27e8-4303-acc6-ea6954b8b50a",
+            "name": "Chocolate & Sweets Maltesers Truffles 'Happy Birthday' Box 200g",
+            "previewUrl": "https://images.ctfassets.net/3m6f3dx67i1j/3ztpsOfoWZXo4j3uVRStpF/2dbebe2dcf4ba0df5cd45b4a9b87164f/fa-image-landscape.png?w=640&h=360&fit=fill",
+            "price": {
+                "amount": 7.95,
+                "currency": "GBP"
+            }
+        },
+        {
+            "id": "b1c2d3e4-f5a6-7b8c-9d0e-f1a2b3c4d5e6",
+            "name": "Image Trio Photo Upload Mug",
+            "previewUrl": "https://images.ctfassets.net/3m6f3dx67i1j/3ztpsOfoWZXo4j3uVRStpF/2dbebe2dcf4ba0df5cd45b4a9b87164f/fa-image-landscape.png?w=640&h=360&fit=fill",
+            "price": {
+                "amount": 8.98,
+                "currency": "GBP"
+            }
+        }
+    ]
+}
