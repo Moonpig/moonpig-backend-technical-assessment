@@ -20,4 +20,27 @@ public class BasketController(IBasketService basketService) : ControllerBase
         }
         return Ok(basket);
     }
+
+    [HttpPost("{id}/add_to_basket")]
+    public async Task<ActionResult<Models.Basket>> AddToBasket([FromRoute] int id, [FromBody] Models.AddToBasketRequest request)
+    {
+        
+        if (id <= 0)
+        {
+            return BadRequest("Basket ID must be a positive number.");
+        }
+
+        if (request.Quantity <= 1)
+        {
+            return BadRequest("Quantity must be valid.");
+        }
+
+        if (string.IsNullOrWhiteSpace(request.ProductId))
+        {
+            return BadRequest("Product ID is required.");
+        }
+
+        var basket = await basketService.AddToBasket(id.ToString(), request);
+        return Ok(basket);
+    }
 }
