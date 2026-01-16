@@ -36,4 +36,25 @@ public class InMemoryBasketRepository : IBasketRepository
         _store.TryGetValue(id, out var basket);
         return Task.FromResult(basket);
     }
+
+    public Task<Models.Basket> AddToBasket(string bid, Models.LineItem line_item)
+    {
+        if (!_store.TryGetValue(bid, out var basket))
+        {
+            basket = new Models.Basket { Id = bid, LineItems = new List<LineItem>() };
+            _store[bid] = basket;
+        }
+
+        var existingItem = basket.LineItems.FirstOrDefault(x => x.ProductId == line_item.ProductId);
+        if (existingItem != null)
+        {
+            existingItem.Quantity += line_item.Quantity;
+        }
+        else
+        {
+            basket.LineItems.Add(line_item);
+        }
+
+        return Task.FromResult(basket);
+    }
 }

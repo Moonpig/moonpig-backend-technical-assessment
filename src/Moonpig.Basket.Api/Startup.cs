@@ -1,4 +1,6 @@
-﻿namespace Moonpig.Basket.Api
+﻿using Moonpig.Basket.Api.Helpers;
+
+namespace Moonpig.Basket.Api
 {
     using Moonpig.Basket.Api.Infrastructure;
     using Moonpig.Basket.Api.Services;
@@ -17,6 +19,7 @@
         {
             services.AddScoped<IBasketService, BasketService>();
             services.AddSingleton<IBasketRepository, InMemoryBasketRepository>();
+            services.AddSingleton<ProductsHelper>();
             services.AddControllers();
         }
 
