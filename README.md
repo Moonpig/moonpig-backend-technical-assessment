@@ -83,11 +83,14 @@ Review the pull request submitted by your teammate: [Pull Request #1](https://gi
 
 Provide feedback in the style of a GitHub review, focusing on clarity, correctness, and sound judgement.
 
+You are welcome to use AI tools to support you with the review, however you will need to let us know what tools you have used and how you have used them.
+
 ### How to Answer
 
 1. Make a copy of [PULLREQUEST.md](PULLREQUEST.md).
 2. Add your review comments there, referencing file names and line numbers.
-3. Email the completed file to your Moonpig contact.
+3. Include info about any AI tooling you have used and how you have used them.
+4. Email the completed file to your Moonpig contact.
 
 ## Criteria
 
