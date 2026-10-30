@@ -79,7 +79,7 @@ Invoke-WebRequest https://localhost:52641/api/basket/1 -SkipCertificateCheck   #
 
 ## Your Task
 
-Review the pull request submitted by your teammate: [Pull Request #1](https://github.com/moonpig-spike/moonpig-spike-technical-assessment-backend/pull/1)
+Review the pull request submitted by your teammate: [Pull Request #1](https://github.com/Moonpig/moonpig-backend-technical-assessment/pull/1)
 
 Provide feedback in the style of a GitHub review, focusing on clarity, correctness, and sound judgement.
 
